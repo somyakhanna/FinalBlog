@@ -67,6 +67,7 @@ $s1="SELECT * from posts,bloggers where posts.author='$name' AND bloggers.name='
          
      
           ?>
+         <br>
                      <img class="img-responsive" id="circle" src="img/<?php echo $row['image'];?>"/>
                   
          <h2><?php echo $row['name'];?></h2>
