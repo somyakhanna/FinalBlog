@@ -7,7 +7,7 @@ if(isset($_GET['blogger'])){
 $s="SELECT * from posts,bloggers where posts.author='$name' AND bloggers.name='$name'";
  
 $s1="SELECT * from posts,bloggers where posts.author='$name' AND bloggers.name='$name'";
-echo $name;
+
 // $sql="select * from bloggers where name='$name'";
  
  
