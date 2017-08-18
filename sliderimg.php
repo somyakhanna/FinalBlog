@@ -78,11 +78,7 @@
                                <h2>Artika Singh</h2>
                              
                     </div></a>
-                <a href="blogger.php?blogger=Steven%20Lawrence"><div class="feature-image" >
-                        <img src="img/steven.jpg" alt="" id="circle">
-                <h2>Steven Lawrence</h2>
                 
-                                  </div></a>
                 <a href="blogger.php?blogger=Tanishq%20Agarwal"><div class="feature-image" >
                         <img src="img/Tanishq.jpg" alt="" id="circle">
                 <h2>Tanishq Agarwal</h2>

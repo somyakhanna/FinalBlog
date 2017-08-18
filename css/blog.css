@@ -338,6 +338,7 @@ ul.posts {
     list-style: none;
     padding: 0;
     border-left: dotted 1px rgba(160, 160, 160, 0.3);
+    border-right: dotted 1px rgba(160, 160, 160, 0.3);
 }
 
 ul.posts li {
@@ -957,6 +958,8 @@ ul.actions.fit.small li {
     text-transform: uppercase;
     letter-spacing: 0.1em;
     font-size: 1.5em;
+   
+    
 }
 /*
 @media screen and (max-width: 1280px) {
@@ -1000,6 +1003,7 @@ ul.actions.fit.small li {
   
     float:right;
     padding-right:0.1em;
+
 }
 
 #right {
@@ -1020,12 +1024,29 @@ ul.actions.fit.small li {
 
 
 #postbackground {
-    width: 100%;
+   
     height: 400px;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top;
 }
+@media (max-width: 480px) {
+  #postbackground {
+    width:100%;
+    height:400px;
+    background-repeat: no-repeat;
+    margin-top:4%
+    background-size: contain ;
+  }
+}
+@media (min-width: 481px) {
+  #postbackground {
+   width:86%;
+   margin-left:7%;
+    background-repeat: no-repeat;
+    background-size: cover ;
+  }
+} 
 
 
 #background {
@@ -1290,12 +1311,29 @@ background-position: center; background-size:cover;}
 
 .blog img::-moz-selection{color:#fff;background:0 0}
 #maincon{
-    margin-left:5%;
-    margin-right:5%;
+    
    height:auto;
     width: auto;
    
+  
 }
+@media (max-width: 480px) {
+  #maincon {
+    width:auto;
+    height:auto;
+    
+  }
+}
+@media (min-width: 481px) {
+  #maincon {
+   margin-left:5%;
+    margin-right:5%;
+   height:auto;
+    width: auto;
+    padding-left: 4%;
+  }
+} 
+
 #con{
     margin-top:2%;
 }
@@ -1312,7 +1350,7 @@ background-position: center; background-size:cover;}
 	color: #fff;
 	background-color: #4C67A1;
         margin-top: 1em;
-        width:150px;
+        
 }
 .btn-facebook:hover {
 	color: #fff;
@@ -1341,7 +1379,7 @@ background-position: center; background-size:cover;}
 	color: #fff;
 	background-color: #00aced;
         margin-top: 1em;
-         width:150px;
+       
 }
 .btn-twitter:hover {
 	color: #fff;
@@ -1354,12 +1392,35 @@ background-position: center; background-size:cover;}
     margin-top: 1em;
 	color: #fff;
 	background-color:#C92228;
-         width:150px;
+         
 }
 .btn-pinterest:hover {
 	color: #FFF;
         background-color:#C92228;
 }
+@media (max-width: 480px) {
+  #buttonslaptop {
+    display:none;
+    
+  }
+  #buttonsmobile .btn{
+      width:50px;
+      border-radius: 50%;
+      height:50px;
+  }
+}
+@media (min-width: 481px) {
+  #buttonslaptop .btn {
+   
+    width: 150px;
+    border-radius: 0%;
+    
+  }
+  #buttonsmobile{
+      display:none;
+  }
+} 
+
 
 /*--- ABOUT US ---*/
 

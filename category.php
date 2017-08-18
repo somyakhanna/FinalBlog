@@ -120,16 +120,18 @@ $result1=mysqli_query($connect,$query);
                     $img="img/poa.jpg";
                 else
                 $img ="img/".$row['imgname'];
+    }
             ?>
-      <div class='h1' id='try' style='background-image: url("<?php echo $img;?>");
-'><a href='post.php'></a><?php }?>
+     <div class='h1' id='try' style='background-image: url(img/<?php echo $row['imgname'];?>);
+background-position: center;background-size:cover;'><a href="post.php?pid=<?php echo $row['id'];?>"></a>
 <div class='h2'>
-          <div class='fl'><span><a href="post.php?pid=<?php echo $row['id'];?>">  <?php echo $row['category'];?></a></span></div><br>
-<div class='f2'><span><a href="post.php?pid=<?php echo $row['id'];?>">  <?php echo $row['title'];?>.</a></span></div><br>
-          <div class='f3'><span><a href="post.php?pid=<?php echo $row['id'];?>"> <?php echo $row['author'];?></a></span></div>  </div>
-    
+          <div class='fl'><span><a href="category.php?cat=<?php echo str_replace(" & ", "_and_",$row['category']);?>"><?php echo $row['category'];?></a></span></div><br>
+          <div class='f2'><span><a href="post.php?pid=<?php echo $row['id'];?>"><?php echo $row['title'];?></a></span></div><br>
+          <div class='f3'><span><a href="blogger.php?blogger=<?php echo $row['author'];?>"><?php echo $row['author'];?></a></span></div>
+      </div>
        
-       <div class='clear'></div>
+        <div class='clear'></div>
+ 
       </div>
     </div>
               

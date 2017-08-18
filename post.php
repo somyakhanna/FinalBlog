@@ -55,13 +55,14 @@ $result1=mysqli_query($connect,$query);
 
 
           ?>
-    <div class="container" id="maincon">
+    <div class="container-fluid">
     <?php if(isset($row['imgname'])){
                 if($row['imgname']=="no")
                     $img="img/poa.jpg";
                 else
                 $img ="img/".$row['imgname'];
             ?>
+        
         <div id="postbackground" style='background-image: url("<?php echo $img;?>")'>
         <?php } }?>
         <br>
@@ -88,13 +89,15 @@ $result1=mysqli_query($connect,$query);
         </div>
     </div>
     </div>
-      <br>
+    </div>
+      
+      <div class="container-fluid" id="maincon">
     <div class="blog">
-        <article>
-       
+               
             <div class="row">
-                <p >Posted by <a href="#"><?php echo $row['author'];?></a> on <?php echo $row['date'];?></p>
-<br>
+                
+                <p style="margin-left:1em">  Posted by <a href="#"><?php echo $row['author'];?></a> on <?php echo $row['date'];?></p>
+
             </div>
             <div class="row">
 
@@ -102,7 +105,7 @@ $result1=mysqli_query($connect,$query);
             <?php }?>
            
 
-                                <div class="row">
+                                <div class="row" id="buttonslaptop">
                                     <br>              
 
     <!-- Facebook -->
@@ -116,7 +119,24 @@ $result1=mysqli_query($connect,$query);
     </div>
    
     <div class="col-xs-12 col-lg-2 col-md-2 col-sm-3">
-    <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=230'); return false"><button  type="button" class="btn btn-pinterest btn-lg"><i class="fa fa-pinterest fa-2"> Pinterest</i></button></a><!-- Twitter -->
+    <a href="http://pinterest.com/pin/create/button/?url=/node/[nid]&description=[title]" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=230'); return false"><button  type="button" class="btn btn-pinterest btn-lg"><i class="fa fa-pinterest fa-2"> Pinterest</i></button></a><!-- Twitter -->
+    </div>
+    </div>
+         <div class="row" id="buttonsmobile">
+                                                 
+
+    <!-- Facebook -->
+   
+    <div class="col-xs-2 col-lg-2 col-md-2 col-sm-3"><div class="fb-share-button" data-href="http://planofaction.in/blog/post.php?pid=" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fplanofaction.in%2Fblog%2Fpost.php%3Fpid&amp;src=sdkpreparse"><button  type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"> </i></button></a><!-- Twitter -->
+    
+       </div></div>
+      
+    <div class="col-xs-2 col-lg-2 col-md-2 col-sm-3">
+    <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=230'); return false"><button type="button" class="btn btn-twitter btn-lg"><i class="fa fa-twitter fa-2"> </i></button></a><!-- Twitter -->
+    </div>
+   
+    <div class="col-xs-2 col-lg-2 col-md-2 col-sm-3">
+    <a href="http://pinterest.com/pin/create/button/?url=/node/[nid]&description=[title]" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=230'); return false"><button  type="button" class="btn btn-pinterest btn-lg"><i class="fa fa-pinterest fa-2"> </i></button></a><!-- Twitter -->
     </div>
     </div>
 
@@ -181,9 +201,8 @@ $result=mysqli_query($connect,$query);
                </div>
            
 
-    </article>
-    </div>
-    <hr>
+      </div>
+    
     <br>
    
     
