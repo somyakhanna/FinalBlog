@@ -5,20 +5,25 @@ $result1="";
 $query1="SELECT * FROM categories";
  $result1 = mysqli_query($connect,$query1);
 
-
-
-
 ?>
 
 <html>
 <head>
-   
+    <style>
+      @media (max-width: 480px){
+
+    .navbar-fixed-top {
+        position: relative;
+        top: auto;/* Auto position navbar top */
+    }
+
+        </style>
         
 </head>
 
 <body style="overflow-x:hidden">
     
-        <div id="header">
+        <div id="header_menu">
             <!--Navigation -->
             <nav class="navbar navbar-fixed-top links my-navbar " role="navigation">
                 <div class="container">
@@ -73,4 +78,6 @@ $query1="SELECT * FROM categories";
         </div>
     
         <!-- /.container -->
+        
+               
     </html> 

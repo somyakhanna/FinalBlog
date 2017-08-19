@@ -35,12 +35,12 @@ $result=mysqli_query($connect,$query);
     <!--#################################
     - THEMEPUNCH BANNER -
 #################################-->
-  <div class="tp-banner-container">
+    <div class="tp-banner-container" style="margin-top:3%; ">
     <div class="tp-banner" >
       <ul>  <!-- SLIDE  -->
   <?php
 
-    $query1="SELECT * FROM posts ORDER BY id DESC LIMIT 3 ";
+    $query1="SELECT * FROM posts ORDER BY RAND() LIMIT 3 ";
 
 $result1=mysqli_query($connect,$query1);
 
@@ -59,9 +59,10 @@ $result1=mysqli_query($connect,$query1);
     <img src="<?php echo $img;?>"  alt="" data-lazyload="<?php echo $img;?>" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 <!-- LAYERS -->
 <!-- LAYER NR. 1 -->
+
     <div class="tp-caption tp-resizeme sft" id="banner-text"
         data-x="20"
-        data-y="410"
+        data-y="390"
         data-speed="1000"
         data-start="2400"
         data-easing="Power4.easeOut"
@@ -74,7 +75,7 @@ $result1=mysqli_query($connect,$query1);
 <!-- LAYER NR. 2 -->
     <div class="tp-caption tp-resizeme sft" id="readmore"
       data-x="35"
-      data-y="520"
+      data-y="490"
       data-speed="1000"
       data-start="3000"
       data-easing="Power3.easeInOut"
@@ -107,8 +108,8 @@ $result1=mysqli_query($connect,$query1);
         <?php 
              while ($row = mysqli_fetch_assoc($result)){
           ?>
-           
-            <div class='pro_part col-xs-12 col-sm-6 col-md-4 col-lg-4'>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 try ">
+            <div class='pro_part '>
             <?php if(isset($row['imgname'])){
      if ($row['imgname'] == "no") {
                         $img = "img/poa.jpg";
@@ -117,8 +118,9 @@ $result1=mysqli_query($connect,$query1);
                     }
             }
                     ?>
-      <div class='h1' id='try' style='background-image: url(img/<?php echo $row['imgname'];?>);
-background-position: center;background-size:cover;'><a href="post.php?pid=<?php echo $row['id'];?>"></a>
+                             
+      <div class='h1'  style='background-image: url(img/<?php echo $row['imgname'];?>);
+         '><a href="post.php?pid=<?php echo $row['id'];?>"></a>
 <div class='h2'>
           <div class='fl'><span><a href="category.php?cat=<?php echo str_replace(" & ", "_and_",$row['category']);?>"><?php echo $row['category'];?></a></span></div><br>
           <div class='f2'><span><a href="post.php?pid=<?php echo $row['id'];?>"><?php echo $row['title'];?></a></span></div><br>
@@ -127,7 +129,9 @@ background-position: center;background-size:cover;'><a href="post.php?pid=<?php 
        
         <div class='clear'></div>
  
-      </div>
+      </div>  
+                </div>
+               
     </div>
         
 
@@ -151,7 +155,7 @@ background-position: center;background-size:cover;'><a href="post.php?pid=<?php 
                     
                         <div class="mini-posts col-xs-12 col-lg-9 col-md-9 col-sm-9" >
                      
-                        <h1 id="heading" >Browse Our Other Genres</h1>
+                    <h1 id="heading" >Other Genres</h1>
                         <br>
                         <br>
                         <!-- Mini Post -->
@@ -219,7 +223,7 @@ background-position: center;background-size:cover;'><a href="post.php?pid=<?php 
                         
                         <ul class="posts col-xs-12 col-sm-12 col-lg-12 col-md-12">
 
-                            <h1 id="heading">Most Liked Posts</h1>
+                            <h1 id="heading">Recommended Posts</h1>
                             
                             <br>
            
@@ -230,7 +234,7 @@ $query="SELECT * FROM posts LIMIT 4";
 $result=mysqli_query($connect,$query);
                             while ($row = mysqli_fetch_assoc($result)){
                             ?>
-                                <li style='padding:5px;'>
+                                <li style='padding:3px;'>
                                         <article>
                                             <header>
                                                 <center>

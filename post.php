@@ -27,9 +27,9 @@ $query="SELECT * FROM posts WHERE id='$postid'";
   <link href='http://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
  
     <!-- Bootstrap Core CSS -->
-<link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
-    <link href="css/blog.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
+<link href="css/blog.css" rel="stylesheet" media="screen">
+       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
 <script>
@@ -96,8 +96,23 @@ $result1=mysqli_query($connect,$query);
                
             <div class="row">
                 
-                <p style="margin-left:1em">  Posted by <a href="#"><?php echo $row['author'];?></a> on <?php echo $row['date'];?></p>
-
+               <div class="author-info">
+                   <div class="author-image pull-left">
+                       <a href="blogger.php?blogger=<?php echo $row['author'];?>">
+                           <img alt="<?php echo $row['author'];?>" src="img/user.png" class="img-circle" ></a></div>
+                           <div class="pull-left" >
+                               <span class="author-name text-uppercase" >
+                                   <a href="blogger.php?blogger=<?php echo $row['author'];?>" >
+                                       <span><?php echo $row['author'];?></span></a>
+                                   &nbsp;<label class="piping" >&nbsp;|</label>
+                               </span>
+                               <span class="published-time publish-time text-capitalize" >
+                                   <time > <?php echo $row['date'];?></time></span>
+                           </div>
+                   <div class="clearfix" >
+                       
+                   </div></div> 
+               
             </div>
             <div class="row">
 
@@ -106,22 +121,24 @@ $result1=mysqli_query($connect,$query);
            
 
                                 <div class="row" id="buttonslaptop">
-                                    <br>              
+                                               
 
     <!-- Facebook -->
    
-    <div class="col-xs-12 col-lg-2 col-md-2 col-sm-3"><div class="fb-share-button" data-href="http://planofaction.in/blog/post.php?pid=" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fplanofaction.in%2Fblog%2Fpost.php%3Fpid&amp;src=sdkpreparse"><button  type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"> Facebook</i></button></a><!-- Twitter -->
+    <div class="col-xs-12 col-lg-2 col-md-2 col-sm-2"><div class="fb-share-button" data-href="http://planofaction.in/blog/post.php?pid=" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fplanofaction.in%2Fblog%2Fpost.php%3Fpid&amp;src=sdkpreparse"><button  type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"> Facebook</i></button></a><!-- Twitter -->
     
        </div></div>
       
-    <div class="col-xs-12 col-lg-2 col-md-2 col-sm-3">
+    <div class="col-xs-12 col-lg-2 col-md-2 col-sm-2">
     <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=230'); return false"><button type="button" class="btn btn-twitter btn-lg"><i class="fa fa-twitter fa-2"> Twitter</i></button></a><!-- Twitter -->
     </div>
    
-    <div class="col-xs-12 col-lg-2 col-md-2 col-sm-3">
+    <div class="col-xs-12 col-lg-2 col-md-2 col-sm-2">
     <a href="http://pinterest.com/pin/create/button/?url=/node/[nid]&description=[title]" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=230'); return false"><button  type="button" class="btn btn-pinterest btn-lg"><i class="fa fa-pinterest fa-2"> Pinterest</i></button></a><!-- Twitter -->
     </div>
+    
     </div>
+        <br>
          <div class="row" id="buttonsmobile">
                                                  
 
@@ -151,11 +168,12 @@ $result1=mysqli_query($connect,$query);
 
 
           ?>
-        <br>    <div class="row col-xs-12 col-lg-9 col-md-9 col-sm-9">
+        <br>    <div class="container-fluid col-xs-12 col-lg-9 col-md-9 col-sm-9 " id="blog_text" >
            
 <?php echo $row['body'];}?>
         </div>
-             <div id="right-wrapper" class="col-xs-12 col-sm-3 col-lg-3 col-md-3">
+        
+        <div id="right-wrapper"  class="col-xs-12 col-sm-3 col-lg-3 col-md-3">
 
                 <!-- Posts List -->
                 <section id="right" class="row">
@@ -163,7 +181,7 @@ $result1=mysqli_query($connect,$query);
                         
                         <ul class="posts col-xs-12 col-sm-12 col-lg-12 col-md-12">
 
-                            <h1 id="heading">Most Liked Posts</h1>
+                            <h1 id="heading">Recommended Posts</h1>
                             
                             <br>
            

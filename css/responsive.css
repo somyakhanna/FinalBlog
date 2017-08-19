@@ -129,8 +129,8 @@ margin-top  : 50px;
 @media only screen and (min-width : 480px) and (max-width : 767px) {
 
 .navbar-fixed-top {
-  position  : static !important;
-    padding : 5px 0;
+  position: fixed;
+    padding : 0;
 }
 .top-social.level-0 li.location { 
   margin-right: 10px;
@@ -216,8 +216,9 @@ footer .footer-top .heading,
 .reservation-top-section h2.text-left{font-size:25px;}
 .footer-top{padding:0px;}
 .navbar-fixed-top {
-  position  : static !important;
-  padding   : 5px 0;
+  position  : fixed;
+  padding   : 0;
+ 
 }
 .fa-ul.list-inline.top-info.level-0 li {
   font-size : 8px;

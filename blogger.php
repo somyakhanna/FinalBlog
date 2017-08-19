@@ -68,7 +68,7 @@ $s1="SELECT * from posts,bloggers where posts.author='$name' AND bloggers.name='
      
           ?>
          <br>
-                     <img class="img-responsive" id="circle" src="img/<?php echo $row['image'];?>"/>
+         <img class="img-responsive"  style="border:none;"id="circle" src="img/<?php echo $row['image'];?>"/>
                   
          <h2><?php echo $row['name'];?></h2>
          <hr>
@@ -96,7 +96,7 @@ $s1="SELECT * from posts,bloggers where posts.author='$name' AND bloggers.name='
  
  
         <center> <h1>
-            POPULAR BLOGS
+            RECENT BLOGS
         </h1>
         </center>
         <div id="blogs">
@@ -108,9 +108,10 @@ while($rows=mysqli_fetch_assoc($result1)){
  
   ?>
  
-            <div  class='pro_part col-xs-12 col-sm-6 col-md-4 col-lg-4'>
-      <div class='h1' id='try' style='background-image: url(img/<?php echo $rows['imgname'];?>);
-background-position: center;background-size:cover;'><a href="post.php?pid=<?php echo $rows['id'];?>"></a>
+          <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 try ">
+            <div class='pro_part '>
+      <div class='h1' style='background-image: url(img/<?php echo $rows['imgname'];?>);'
+><a href="post.php?pid=<?php echo $rows['id'];?>"></a>
 <div class='h2'>
           <div class='fl'><span><a href="category.php?cat=<?php echo str_replace(" & ", "_and_",$rows['category']);?>"><?php echo $rows['category'];?></a></span></div><br>
           <div class='f2'><span><a href="post.php?pid=<?php echo $rows['id'];?>"><?php echo $rows['title'];?></a></span></div><br>
@@ -120,7 +121,7 @@ background-position: center;background-size:cover;'><a href="post.php?pid=<?php 
         <div class='clear'></div>
  
       </div>
- 
+            </div>
     </div>
     <?php }?>
    

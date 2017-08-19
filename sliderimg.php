@@ -73,32 +73,32 @@
          <div class="col-xs-12 col-md-12 col-sm-12">
            <div class="owl-wrap">
             <div id="owl-dishes" class="owl-carousel">
-                <a href="blogger.php?blogger=Artika%20Singh"><div class="feature-image">
-                        <img src="img/artika.jpg" alt="" id="circle">
+                <div class="feature-image">
+                    <a href="blogger.php?blogger=Artika%20Singh"><img src="img/artika.jpg" alt="" id="circle"></a>
                                <h2>Artika Singh</h2>
                              
-                    </div></a>
+                    </div>
                 
-                <a href="blogger.php?blogger=Tanishq%20Agarwal"><div class="feature-image" >
-                        <img src="img/Tanishq.jpg" alt="" id="circle">
-                <h2>Tanishq Agarwal</h2>
+                <div class="feature-image" >
+                    <a href="#">  <img src="img/Tanishq.jpg" alt="" id="circle"></a>
+                          <h2>Tanishq Agarwal</h2>
                
-                    </div></a>
-                <a href="blogger.php?blogger=Naina%20Ruhail"><div class="feature-image" >
-                        <img src="img/naina.jpg" alt="" id="circle">
-                <h2>Naina Ruhail</h2>
+                    </div>
+                <div class="feature-image" >
+                      <a href="#">  <img src="img/naina.jpg" alt="" id="circle">
+                          <h2>Naina Ruhail</h2></a>
                 
-                    </div></a>
-                <a href="blogger.php?blogger=Chetna%20Dhull"><div class="feature-image">
-                  <img src="img/chetna.jpg" alt=""  id="circle">
-                <h2>Chetna Dhull</h2>
+                    </div>
+                <div class="feature-image">
+                    <a href="blogger.php?blogger=Chetna%20Dhull"><img src="img/chetna.jpg" alt=""  id="circle"></a>
+                    <h2>Chetna Dhull</h2>
                 
-                    </div></a>
-                <a href="blogger.php?blogger=Geeta%20Sowmya"><div class="feature-image">
-                  <img src="img/geeta.jpg" alt=""  id="circle">
-                <h2>Geeta Sowmya</h2>
+                    </div>
+                <div class="feature-image">
+                    <a href="blogger.php?blogger=Geeta%20Sowmya">  <img src="img/geeta.jpg" alt=""  id="circle"></a>
+                    <h2>Geeta Sowmya</h2>
                 
-                    </div></a>
+                    </div>
            </div><!-- /.owl-carousel -->
             <div class="owl-controls">
              <a class="next"><i class="flaticon-arrow427"></i></a>

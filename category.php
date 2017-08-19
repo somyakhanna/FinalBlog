@@ -65,23 +65,26 @@ $query="SELECT * FROM posts WHERE category='$s' LIMIT 3";
      <?php
          
         
-$query1="SELECT * FROM posts WHERE category='$category' LIMIT 3";
+$query1="SELECT * FROM posts WHERE category='$category'  order by RAND() LIMIT 3";
 
 $result1=mysqli_query($connect,$query1);
 //echo $result1;
         while ($row = mysqli_fetch_assoc($result1)){
           ?>
                
-    <div class='pro_part col-xs-12 col-sm-6 col-md-4 col-lg-4'>
-    <?php if(isset($row['imgname'])){
-                if($row['imgname']=="no")
-                    $img="img/poa.jpg";
-                else
-                $img ="img/".$row['imgname'];
-    }
-            ?>
-       <div class='h1' id='try' style='background-image: url(img/<?php echo $row['imgname'];?>);
-background-position: center;background-size:cover;'><a href="post.php?pid=<?php echo $row['id'];?>"></a>
+     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 try">
+            <div class='pro_part '>
+            <?php if(isset($row['imgname'])){
+     if ($row['imgname'] == "no") {
+                        $img = "img/poa.jpg";
+                    } else {
+                        $img = "img/" . $row['imgname'];
+                    }
+            }
+                    ?>
+                             
+      <div class='h1'  style='background-image: url(img/<?php echo $row['imgname'];?>);
+         '><a href="post.php?pid=<?php echo $row['id'];?>"></a>
 <div class='h2'>
           <div class='fl'><span><a href="category.php?cat=<?php echo str_replace(" & ", "_and_",$row['category']);?>"><?php echo $row['category'];?></a></span></div><br>
           <div class='f2'><span><a href="post.php?pid=<?php echo $row['id'];?>"><?php echo $row['title'];?></a></span></div><br>
@@ -90,7 +93,9 @@ background-position: center;background-size:cover;'><a href="post.php?pid=<?php 
        
         <div class='clear'></div>
  
-      </div>
+      </div>  
+                </div>
+               
     </div>
     
 <?php 
@@ -114,16 +119,19 @@ $result1=mysqli_query($connect,$query);
         while ($row = mysqli_fetch_assoc($result1)){
           ?>
               
-    <div class='pro_part col-xs-12 col-sm-6 col-md-4 col-lg-4'>
-    <?php if(isset($row['imgname'])){
-                if($row['imgname']=="no")
-                    $img="img/poa.jpg";
-                else
-                $img ="img/".$row['imgname'];
-    }
-            ?>
-     <div class='h1' id='try' style='background-image: url(img/<?php echo $row['imgname'];?>);
-background-position: center;background-size:cover;'><a href="post.php?pid=<?php echo $row['id'];?>"></a>
+     <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 try">
+            <div class='pro_part '>
+            <?php if(isset($row['imgname'])){
+     if ($row['imgname'] == "no") {
+                        $img = "img/poa.jpg";
+                    } else {
+                        $img = "img/" . $row['imgname'];
+                    }
+            }
+                    ?>
+                             
+      <div class='h1'  style='background-image: url(img/<?php echo $row['imgname'];?>);
+         '><a href="post.php?pid=<?php echo $row['id'];?>"></a>
 <div class='h2'>
           <div class='fl'><span><a href="category.php?cat=<?php echo str_replace(" & ", "_and_",$row['category']);?>"><?php echo $row['category'];?></a></span></div><br>
           <div class='f2'><span><a href="post.php?pid=<?php echo $row['id'];?>"><?php echo $row['title'];?></a></span></div><br>
@@ -132,7 +140,9 @@ background-position: center;background-size:cover;'><a href="post.php?pid=<?php 
        
         <div class='clear'></div>
  
-      </div>
+      </div>  
+                </div>
+               
     </div>
               
 <?php 

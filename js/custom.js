@@ -9,11 +9,11 @@ jQuery('.tp-banner').show().revolution(
     dottedOverlay:"none",
     delay:6000,
     startwidth:1170,
-    startheight:600,
-    hideThumbs:200,
+    startheight:550,
+    hideThumbs:500,
 
     thumbWidth:100,
-    thumbHeight:50,
+    thumbHeight:500,
     thumbAmount:5,
 
     navigationType:"bullet",
@@ -76,7 +76,7 @@ jQuery('.tp-banner').show().revolution(
     fullScreenOffsetContainer: ".header"    
 });
 
-// STIKY MENU
+            //STIKY MENU
 $(window).scroll(function(){ 
     if ($(this).scrollTop() > 10){      
       $('.header-wrapper').addClass("navbar-fixed-top");
