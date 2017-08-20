@@ -1,4 +1,4 @@
-<?php 
+    <?php 
 include("connections/connections.php");
 if(isset($_GET['cat'])){
   $s=str_replace("_and_", " & ",$_GET['cat']);
@@ -40,6 +40,8 @@ $query="SELECT * FROM posts WHERE category='$s' LIMIT 3";
 
 
     <link rel="stylesheet" type="text/css"href="css/blog.css">
+    <!-- Responsive -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
     
   <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
@@ -47,8 +49,9 @@ $query="SELECT * FROM posts WHERE category='$s' LIMIT 3";
 </head>
 
 <body>
+         <?php include("menu.php");?>
   <div id="category" id="content">
-     <?php include("menu.php");?>
+
     <br>
     <br>
     <br>
@@ -161,7 +164,7 @@ $result1=mysqli_query($connect,$query);
                     
                         <div class="mini-posts col-xs-12 col-lg-9 col-md-9 col-sm-9" >
                      
-                        <h1 id="heading" >Browse Our Other Genres</h1>
+                        <h2 id="heading" >Other Genres</h2>
                         <br>
                         <br>
                         <!-- Mini Post -->
@@ -230,14 +233,14 @@ $result1=mysqli_query($connect,$query);
                         
                         <ul class="posts col-xs-12 col-sm-12 col-lg-12 col-md-12">
 
-                            <h1 id="heading">Most Liked Posts</h1>
-                            
+                              <div class="row"><h2 id="heading">Recommended Posts</h2></div>
+                          
                             <br>
            
                             <?php 
                             $p=1;
 
-$query="SELECT * FROM posts LIMIT 4";
+$query="SELECT * FROM posts order by RAND() LIMIT 4";
 $result=mysqli_query($connect,$query);
                             while ($row = mysqli_fetch_assoc($result)){
                             ?>

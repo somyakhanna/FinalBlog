@@ -105,7 +105,7 @@ $result=mysqli_query($connect,$query);
                     
                         <div class="mini-posts col-xs-12 col-lg-9 col-md-9 col-sm-9" >
                      
-                        <h1 id="heading" >Browse Our Other Genres</h1>
+                        <h2 id="heading" >Other Genres</h2>
                         <br>
                         <br>
                         <!-- Mini Post -->
@@ -173,14 +173,14 @@ $result=mysqli_query($connect,$query);
                         
                         <ul class="posts col-xs-12 col-sm-12 col-lg-12 col-md-12">
 
-                            <h1 id="heading">Recommended Posts</h1>
-                            
+                           <div class="row"><h2 id="heading">Recommended Posts</h2></div>
+                             
                             <br>
            
                             <?php 
                             $p=1;
 
-$query="SELECT * FROM posts LIMIT 4";
+$query="SELECT * FROM posts ORDER BY RAND() LIMIT 4";
 $result=mysqli_query($connect,$query);
                             while ($row = mysqli_fetch_assoc($result)){
                             ?>

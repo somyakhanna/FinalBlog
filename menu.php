@@ -10,13 +10,7 @@ $query1="SELECT * FROM categories";
 <html>
 <head>
     <style>
-      @media (max-width: 480px){
-
-    .navbar-fixed-top {
-        position: relative;
-        top: auto;/* Auto position navbar top */
-    }
-
+     
         </style>
         
 </head>

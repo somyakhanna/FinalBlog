@@ -56,7 +56,7 @@ $result1=mysqli_query($connect,$query1);
    <!-- data-transition="curtain-2" data-slotamount="1" data-masterspeed="1000" -->
    <li data-transition="slotfade-horizontal" data-slotamount="1" data-masterspeed="500" data-title="">
     <!-- MAIN IMAGE -->
-    <img src="<?php echo $img;?>"  alt="" data-lazyload="<?php echo $img;?>" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
+    <img id="banimg" src="<?php echo $img;?>"  alt="" data-lazyload="<?php echo $img;?>" data-bgposition="center top" data-bgfit="cover" data-bgrepeat="no-repeat">
 <!-- LAYERS -->
 <!-- LAYER NR. 1 -->
 
@@ -155,7 +155,7 @@ $result1=mysqli_query($connect,$query1);
                     
                         <div class="mini-posts col-xs-12 col-lg-9 col-md-9 col-sm-9" >
                      
-                    <h1 id="heading" >Other Genres</h1>
+                    <h2 id="heading" >Other Genres</h2>
                         <br>
                         <br>
                         <!-- Mini Post -->
@@ -223,14 +223,14 @@ $result1=mysqli_query($connect,$query1);
                         
                         <ul class="posts col-xs-12 col-sm-12 col-lg-12 col-md-12">
 
-                            <h1 id="heading">Recommended Posts</h1>
+                            <div class="row"><h2 id="heading">Recommended Posts</h2></div>
                             
                             <br>
            
                             <?php 
                             $p=1;
 
-$query="SELECT * FROM posts LIMIT 4";
+$query="SELECT * FROM posts ORDER BY RAND() LIMIT 4";
 $result=mysqli_query($connect,$query);
                             while ($row = mysqli_fetch_assoc($result)){
                             ?>

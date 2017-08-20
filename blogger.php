@@ -45,7 +45,9 @@ $s1="SELECT * from posts,bloggers where posts.author='$name' AND bloggers.name='
 
 
     <link rel="stylesheet" type="text/css"href="css/blog.css">
-    
+    <!-- Responsive -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+
   <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/main.css">
  

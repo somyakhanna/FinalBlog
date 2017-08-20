@@ -13,7 +13,7 @@ jQuery('.tp-banner').show().revolution(
     hideThumbs:500,
 
     thumbWidth:100,
-    thumbHeight:500,
+    thumbHeight:200,
     thumbAmount:5,
 
     navigationType:"bullet",
@@ -60,10 +60,10 @@ jQuery('.tp-banner').show().revolution(
     stopAtSlide:-1,
 
     shuffle:"off",
-    autoHeight:"off",                       
+    autoHeight:"on",                       
     forceFullWidth:"off",                       
 
-    hideThumbsOnMobile:"off",
+    hideThumbsOnMobile:"on",
     hideNavDelayOnMobile:1500,                      
     hideBulletsOnMobile:"off",
     hideArrowsOnMobile:"off",

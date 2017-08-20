@@ -34,6 +34,10 @@ ul.level2.dropdown-menu:after {
 }
 .fa-ul.list-inline.top-info.level-one li{
   font-size: 12px;
+  }
+  
+.navbar-default .navbar-toggle {
+  display   : none !important;
 }
 }
 
@@ -58,8 +62,14 @@ ul.level2.dropdown-menu:after {
 .megamenu-wrapper {
     width : 100%;
     }
-.navbar-default .navbar-toggle {
-  display   : none !important;
+
+.navbar-fixed-top {
+  position: fixed;
+    padding : 0;
+}
+.mainnav {
+    margin-top    : 0px;
+    margin-bottom : 0px;
 }
 ul.nav.navbar-nav li a {
   font-size     : 13px;
@@ -218,8 +228,7 @@ footer .footer-top .heading,
 .navbar-fixed-top {
   position  : fixed;
   padding   : 0;
- 
-}
+ }
 .fa-ul.list-inline.top-info.level-0 li {
   font-size : 8px;
 }

@@ -29,7 +29,9 @@ $query="SELECT * FROM posts WHERE id='$postid'";
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" type="text/css" href="css/main.css" media="screen">
 <link href="css/blog.css" rel="stylesheet" media="screen">
-       <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<!-- Responsive -->
+  <link rel="stylesheet" type="text/css" href="css/responsive.css" media="screen">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
 
 <script>
@@ -85,7 +87,7 @@ $result1=mysqli_query($connect,$query);
                     
                     <a href="#" id="post-heading"><?php echo $row['title'];?></a>
                    
-            </div>
+            </div>      
         </div>
     </div>
     </div>
@@ -125,15 +127,15 @@ $result1=mysqli_query($connect,$query);
 
     <!-- Facebook -->
    
-    <div class="col-xs-12 col-lg-2 col-md-2 col-sm-2"><div class="fb-share-button" data-href="http://planofaction.in/blog/post.php?pid=" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fplanofaction.in%2Fblog%2Fpost.php%3Fpid&amp;src=sdkpreparse"><button  type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"> Facebook</i></button></a><!-- Twitter -->
+    <div class="col-xs-12 col-lg-2 col-md-3 col-sm-3"><div class="fb-share-button" data-href="http://planofaction.in/blog/post.php?pid=" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fplanofaction.in%2Fblog%2Fpost.php%3Fpid&amp;src=sdkpreparse"><button  type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"> Facebook</i></button></a><!-- Twitter -->
     
        </div></div>
       
-    <div class="col-xs-12 col-lg-2 col-md-2 col-sm-2">
+    <div class="col-xs-12 col-lg-2 col-md-3 col-sm-3">
     <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=230'); return false"><button type="button" class="btn btn-twitter btn-lg"><i class="fa fa-twitter fa-2"> Twitter</i></button></a><!-- Twitter -->
     </div>
    
-    <div class="col-xs-12 col-lg-2 col-md-2 col-sm-2">
+    <div class="col-xs-12 col-lg-2 col-md-3 col-sm-3">
     <a href="http://pinterest.com/pin/create/button/?url=/node/[nid]&description=[title]" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=230'); return false"><button  type="button" class="btn btn-pinterest btn-lg"><i class="fa fa-pinterest fa-2"> Pinterest</i></button></a><!-- Twitter -->
     </div>
     
@@ -144,15 +146,15 @@ $result1=mysqli_query($connect,$query);
 
     <!-- Facebook -->
    
-    <div class="col-xs-2 col-lg-2 col-md-2 col-sm-3"><div class="fb-share-button" data-href="http://planofaction.in/blog/post.php?pid=" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fplanofaction.in%2Fblog%2Fpost.php%3Fpid&amp;src=sdkpreparse"><button  type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"> </i></button></a><!-- Twitter -->
+    <div class="col-xs-2 col-lg-2 col-md-2 col-sm-2"><div class="fb-share-button" data-href="http://planofaction.in/blog/post.php?pid=" data-layout="button_count" data-size="small" data-mobile-iframe="true"><a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fplanofaction.in%2Fblog%2Fpost.php%3Fpid&amp;src=sdkpreparse"><button  type="button" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"> </i></button></a><!-- Twitter -->
     
        </div></div>
       
-    <div class="col-xs-2 col-lg-2 col-md-2 col-sm-3">
+    <div class="col-xs-2 col-lg-2 col-md-2 col-sm-2">
     <a href="https://twitter.com/share?url=https://simplesharebuttons.com&amp;text=Simple%20Share%20Buttons&amp;hashtags=simplesharebuttons" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=230'); return false"><button type="button" class="btn btn-twitter btn-lg"><i class="fa fa-twitter fa-2"> </i></button></a><!-- Twitter -->
     </div>
    
-    <div class="col-xs-2 col-lg-2 col-md-2 col-sm-3">
+    <div class="col-xs-2 col-lg-2 col-md-2 col-sm-2">
     <a href="http://pinterest.com/pin/create/button/?url=/node/[nid]&description=[title]" target="_blank" onclick="window.open(this.href,'targetWindow','toolbar=no,location=0,status=no,menubar=no,scrollbars=yes,resizable=yes,width=600,height=230'); return false"><button  type="button" class="btn btn-pinterest btn-lg"><i class="fa fa-pinterest fa-2"> </i></button></a><!-- Twitter -->
     </div>
     </div>
@@ -181,14 +183,14 @@ $result1=mysqli_query($connect,$query);
                         
                         <ul class="posts col-xs-12 col-sm-12 col-lg-12 col-md-12">
 
-                            <h1 id="heading">Recommended Posts</h1>
+                            <div class="row"><h2 id="heading">Recommended Posts</h2></div>
                             
                             <br>
            
                             <?php 
                             $p=1;
 
-$query="SELECT * FROM posts LIMIT 4";
+$query="SELECT * FROM posts  ORDER BY RAND() LIMIT 4";
 $result=mysqli_query($connect,$query);
                             while ($row = mysqli_fetch_assoc($result)){
                             ?>
