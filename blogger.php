@@ -112,7 +112,7 @@ while($rows=mysqli_fetch_assoc($result1)){
  
           <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 try ">
             <div class='pro_part '>
-      <div class='h1' style='background-image: url(img/<?php echo $rows['imgname'];?>);'
+      <div class='h1' style='background-image: url(img/<?php echo $rows['recimg'];?>);'
 ><a href="post.php?pid=<?php echo $rows['id'];?>"></a>
 <div class='h2'>
           <div class='fl'><span><a href="category.php?cat=<?php echo str_replace(" & ", "_and_",$rows['category']);?>"><?php echo $rows['category'];?></a></span></div><br>

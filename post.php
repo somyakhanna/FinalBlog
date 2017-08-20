@@ -203,7 +203,7 @@ $result=mysqli_query($connect,$query);
                                                 </center>                                    
                                                                                            </header>
                                             
-                                            <a href='post.php?pid=<?php echo $row['id'];?>' class='image img-responsive'><img src='<?php echo"img/".$row['imgname'];?>' alt='' /></a>
+                                            <a href='post.php?pid=<?php echo $row['id'];?>' class='image img-responsive'><img src='<?php echo"img/".$row['recimg'];?>' alt='' /></a>
                                         </article>
                                     </li>
                               <?php 

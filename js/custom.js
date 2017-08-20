@@ -9,8 +9,9 @@ jQuery('.tp-banner').show().revolution(
     dottedOverlay:"none",
     delay:6000,
     startwidth:1170,
-    startheight:550,
-    hideThumbs:500,
+    
+    
+    hideThumbs:550,
 
     thumbWidth:100,
     thumbHeight:200,
@@ -73,10 +74,25 @@ jQuery('.tp-banner').show().revolution(
     hideCaptionAtLimit:0,
     hideAllCaptionAtLilmit:0,
     startWithSlide:0,
-    fullScreenOffsetContainer: ".header"    
+    fullScreenOffsetContainer: ".header",
+    
+ 
+    responsiveLevels: [1240, 1024, 778, 480],
+ 
+    /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
+    gridwidth:[1240, 1024, 778, 480],
+ 
+    /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
+    gridheight:[450, 768, 960, 720],
+    visibilityLevels:[1240, 1024, 1024, 480],
+    
+    
+    
 });
 
-            //STIKY MENU
+      
+    
+    //STIKY MENU
 $(window).scroll(function(){ 
     if ($(this).scrollTop() > 10){      
       $('.header-wrapper').addClass("navbar-fixed-top");

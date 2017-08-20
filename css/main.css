@@ -615,6 +615,17 @@ textarea{
     width:100%;
     position:relative;
 }
+
+@media(max-width:480px){
+ .tp-banner ,.tp-banner-container,#banimg   {
+    position:relative;
+top:20px;
+margin-bottom: 55px;
+
+    }
+}
+
+
 .tp-banner-fullscreen-container {
   width:100%;
   position:relative;

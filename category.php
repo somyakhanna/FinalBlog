@@ -77,16 +77,16 @@ $result1=mysqli_query($connect,$query1);
                
      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 try">
             <div class='pro_part '>
-            <?php if(isset($row['imgname'])){
-     if ($row['imgname'] == "no") {
+            <?php if(isset($row['recimg'])){
+     if ($row['recimg'] == "no") {
                         $img = "img/poa.jpg";
                     } else {
-                        $img = "img/" . $row['imgname'];
+                        $img = "img/" . $row['recimg'];
                     }
             }
                     ?>
                              
-      <div class='h1'  style='background-image: url(img/<?php echo $row['imgname'];?>);
+      <div class='h1'  style='background-image: url(img/<?php echo $row['recimg'];?>);
          '><a href="post.php?pid=<?php echo $row['id'];?>"></a>
 <div class='h2'>
           <div class='fl'><span><a href="category.php?cat=<?php echo str_replace(" & ", "_and_",$row['category']);?>"><?php echo $row['category'];?></a></span></div><br>
@@ -124,16 +124,16 @@ $result1=mysqli_query($connect,$query);
               
      <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4 try">
             <div class='pro_part '>
-            <?php if(isset($row['imgname'])){
-     if ($row['imgname'] == "no") {
+            <?php if(isset($row['recimg'])){
+     if ($row['recimg'] == "no") {
                         $img = "img/poa.jpg";
                     } else {
-                        $img = "img/" . $row['imgname'];
+                        $img = "img/" . $row['recimg'];
                     }
             }
                     ?>
                              
-      <div class='h1'  style='background-image: url(img/<?php echo $row['imgname'];?>);
+      <div class='h1'  style='background-image: url(img/<?php echo $row['recimg'];?>);
          '><a href="post.php?pid=<?php echo $row['id'];?>"></a>
 <div class='h2'>
           <div class='fl'><span><a href="category.php?cat=<?php echo str_replace(" & ", "_and_",$row['category']);?>"><?php echo $row['category'];?></a></span></div><br>
@@ -253,7 +253,7 @@ $result=mysqli_query($connect,$query);
                                                 </center>                                    
                                                                                            </header>
                                             
-                                            <a href='post.php?pid=<?php echo $row['id'];?>' class='image img-responsive'><img src='<?php echo"img/".$row['imgname'];?>' alt='' /></a>
+                                            <a href='post.php?pid=<?php echo $row['id'];?>' class='image img-responsive'><img src='<?php echo"img/".$row['recimg'];?>' alt='' /></a>
                                         </article>
                                     </li>
                               <?php 
