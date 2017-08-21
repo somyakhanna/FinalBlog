@@ -43,6 +43,7 @@ function Change()
 </head>
 
 <body>
+
 <?php include("menu.php");?>
     <!-- Navigation -->
     <!-- Page Header -->
@@ -83,10 +84,20 @@ $result1=mysqli_query($connect,$query);
         while ($row = mysqli_fetch_assoc($result1)){
 
 
+$authorname=$row['author'];
+
+
+$query1="SELECT * FROM bloggers WHERE name='$authorname'";
+
+$result1=mysqli_query($connect,$query1);
+
+
           ?>
                     
                     <a href="#" id="post-heading"><?php echo $row['title'];?></a>
                    
+
+
             </div>      
         </div>
     </div>
@@ -101,7 +112,9 @@ $result1=mysqli_query($connect,$query);
                <div class="author-info">
                    <div class="author-image pull-left">
                        <a href="blogger.php?blogger=<?php echo $row['author'];?>">
-                           <img alt="<?php echo $row['author'];?>" src="img/user.png" class="img-circle" ></a></div>
+                       <?php while ($row23 = mysqli_fetch_assoc($result1)){?>
+                           <img alt="<?php echo $row['author'];?>" src="img/<?php echo $row23['image'];?>" class="img-circle" ></a></div>
+                           <?php }?>
                            <div class="pull-left" >
                                <span class="author-name text-uppercase" >
                                    <a href="blogger.php?blogger=<?php echo $row['author'];?>" >
@@ -122,7 +135,7 @@ $result1=mysqli_query($connect,$query);
             <?php }?>
            
 
-                                <div class="row" id="buttonslaptop">
+              <div class="row" id="buttonslaptop">
                                                
 
     <!-- Facebook -->
@@ -172,7 +185,12 @@ $result1=mysqli_query($connect,$query);
           ?>
         <br>    <div class="container-fluid col-xs-12 col-lg-9 col-md-9 col-sm-9 " id="blog_text" >
            
-<?php echo $row['body'];}?>
+<?php echo $row['body'];?>
+
+
+
+   
+<?php }?>
         </div>
         
         <div id="right-wrapper"  class="col-xs-12 col-sm-3 col-lg-3 col-md-3">
