@@ -54,6 +54,7 @@ $s1="SELECT * from posts,bloggers where posts.author='$name' AND bloggers.name='
 </head>
 
 <body>
+    
 <?php include("menu.php");?>
    
     <!--Banner Ends-->

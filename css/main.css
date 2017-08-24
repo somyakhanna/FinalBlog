@@ -109,17 +109,22 @@ textarea {
     }
 
 
+ @font-face {
+    font-family: "proximabold";
+    src: url("../fonts/proxima-nova-bold.7d88a0a0.woff") format('woff');
+}      
+
 
 h1{
     color           : #c69e59;
-    font-family     : 'Playball',sans-serif;
+    font-family     : proximabold;
     font-size       : 50px;
-    text-transform  : capitalize;
+    text-transform  : uppercase;
   }
 h2{
-    font-family     : 'Playball',sans-serif;
+    font-family     : proximabold;
     font-size       : 40px;
-    text-transform  : capitalize;
+    text-transform  : uppercase;
     color           : #a87f41;
     letter-spacing  : 2px;
     text-align: center;

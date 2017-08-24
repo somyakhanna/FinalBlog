@@ -30,11 +30,11 @@ $result3=mysqli_query($connect,$query);
     <meta name="description" content="">
     <meta name="author" content="">
     
-   <meta property="og:url"                content="http://planofaction.in/post.php?pid=<?php echo $row3['id'];?>" />
+   <meta property="og:url"                content="http://somyakhanna.16mb.com/BlogPoa/post.php?pid=<?php echo $row3['id'];?>" />
 <meta property="og:type"               content="article" />
 <meta property="og:title"              content="<?php echo $row3['title'];?>" />
 <meta property="og:description"        content="<?php echo "";?>" />
-<meta property="og:image"              content="<?php echo "http://planofaction.in/img/".$row3['imgname'];?>" />
+<meta property="og:image"              content="<?php echo "http://somyakhanna.16mb.com/BlogPoa/img/".$row3['imgname'];?>" />
     <meta property="fb:app_id" content="1832248837104350" />
 <title>Plan of Action</title>
 
@@ -164,7 +164,7 @@ $result1=mysqli_query($connect,$query1);
     <!-- Facebook -->
    
     <div class="col-xs-12 col-lg-1 col-md-1 col-sm-1">
-   <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fplanofaction.in/post.php%3Fpid=<?php echo $row['id'];?>&amp;src=sdkpreparse">
+   <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsomyakhanna.16mb.com/BlogPoa/post.php%3Fpid=<?php echo $row['id'];?>&amp;src=sdkpreparse">
                 
              <button  type="button" data-href="http://planofaction.in/post.php?pid=<?php echo $row['id'];?>" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"> </i></button></a><!-- Twitter -->
         </div>
@@ -191,9 +191,9 @@ $result1=mysqli_query($connect,$query1);
    
     <div class="col-xs-2 col-lg-2 col-md-2 col-sm-2">
         
-        <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fplanofaction.in/post.php%3Fpid=<?php echo $row['id'];?>&amp;src=sdkpreparse">
+        <a class="fb-xfbml-parse-ignore" target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fsomyakhanna.16mb.com/BlogPoa/post.php%3Fpid=<?php echo $row['id'];?>&amp;src=sdkpreparse">
        
-           <button  type="button" data-href="http://planofaction.in/post.php?pid=<?php echo $row['id'];?>" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"> </i></button></a><!-- Twitter -->
+           <button  type="button" data-href="http://somyakhanna.16mb.com/BlogPoa/post.php?pid=<?php echo $row['id'];?>" class="btn btn-facebook btn-lg"><i class="fa fa-facebook fa-2"> </i></button></a><!-- Twitter -->
             
        </div>
       

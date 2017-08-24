@@ -95,14 +95,14 @@
                 
                     </div>
                 <div class="feature-image">
-                    <a href="blogger.php?blogger=Geeta%20Sowmya">  <img src="img/geeta.jpg" alt=""  id="circle"></a>
+                    <a href="blogger.php?blogger=Geeta%20Sowmya">  <img src="img/user.jpg" alt=""  id="circle"></a>
                     <h2>Geeta Sowmya</h2>
                 
                     </div>
            </div><!-- /.owl-carousel -->
             <div class="owl-controls">
-             <a class="next"><i class="flaticon-arrow427"></i></a>
-              <a class="prev"><i class="flaticon-arrow413"></i></a>
+             <a class="prev"><i class="flaticon-arrow427"></i></a>
+              <a class="next"><i class="flaticon-arrow413"></i></a>
             </div>
           </div><!-- /.owl-wrap -->
          </div>

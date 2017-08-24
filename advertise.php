@@ -27,9 +27,8 @@
     <div class="container">
     <div class="row">
         <div class="col-xs-12 col-sm-6">
-             
-            <div class="form-wrapper">
-          <h2>leave a message</h2>
+          <div class="form-wrapper">
+          <h2>ADVERTISE WITH US</h2>
          <p> </p>
           <form id='contact_form'>
               <div class="row">
@@ -58,21 +57,9 @@
             </form>
           </div>
         </div>
-         <div class="address-wrapper">
-            <div class="row">
-              <div class="col-xs-12 col-sm-6">
-                <div class="left">
-                  <h2>Reach us</h2>
-                  <p><i class="fa fa-phone"></i><a href="tel:+09717305546"> +0-91-9717305546  </a></p>
-           <p><i class="fa fa-envelope"></i><a href="mailto:info@planofaction.in"> info@planofaction.in</a></p>
-				
-                </div>
-              </div>
-                     
-            </div>
-          </div>
+        
       </div>
-      
+          
         </div>
   </section>
   <!--===| Contact Body End|===-->

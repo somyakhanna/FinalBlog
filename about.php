@@ -29,8 +29,9 @@
   <section class="banner-wrapper about-banner">
     <div class="container">
       <div class="row">
+          <br>
         <div class="col-xs-12">
-            <h1 style="font-size:40px;">About Us</h1>
+            <h1 style="font-size:44px;">About Us</h1>
          
         </div>
       </div>
@@ -43,6 +44,7 @@
       <div class="row">
         <div class="col-xs-12 col-sm-12">
           <div class="story-wrapper">
+              <br>
             <h2>We are committed to making our users life
 
 more fun and meaningful</h2>

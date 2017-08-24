@@ -9,9 +9,8 @@ jQuery('.tp-banner').show().revolution(
     dottedOverlay:"none",
     delay:6000,
     startwidth:1170,
+       
     
-    
-    hideThumbs:550,
 
     thumbWidth:100,
     thumbHeight:200,
@@ -64,10 +63,10 @@ jQuery('.tp-banner').show().revolution(
     autoHeight:"on",                       
     forceFullWidth:"off",                       
 
-    hideThumbsOnMobile:"on",
-    hideNavDelayOnMobile:1500,                      
-    hideBulletsOnMobile:"off",
-    hideArrowsOnMobile:"off",
+    hideThumbsOnMobile:"off",
+    hideNavDelayOnMobile:200,                      
+    hideBulletsOnMobile:"on",
+    showArrowsOnMobile:"on",
     hideThumbsUnderResolution:0,
 
     hideSliderAtLimit:0,
@@ -84,7 +83,7 @@ jQuery('.tp-banner').show().revolution(
  
     /* [DESKTOP, LAPTOP, TABLET, SMARTPHONE] */
     gridheight:[450, 768, 960, 720],
-    visibilityLevels:[1240, 1024, 1024, 480],
+    visibilityLevels:[1240, 1024, 778, 480],
     
     
     
