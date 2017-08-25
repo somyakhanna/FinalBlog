@@ -75,8 +75,14 @@ $headers .= "Reply-To:".$email."\r\n";
 //$headers .= 'BCc: abhiiverma@gmail.com' . "\r\n";  //need to change the BCc before the website goes live
 $subject = "Query".$sub."\r\n";           
 //echo $message;
-if(mail($to,$subject,$message,$headers))
+if(mail($to,$subject,$message,$headers)){
+
+echo 'Mail Sent';
 return true;
-else
-return false;
+}
+else{
+
+echo 'Mail not sent';
+return FALSE;
+}
 ?>
