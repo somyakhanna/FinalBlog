@@ -63,8 +63,7 @@ $result1=mysqli_query($connect,$query1);
     <div class="tp-caption tp-resizeme sft" id="banner-text"
         data-x="15"
       data-y="340"
-     
-        data-speed="1000"
+             data-speed="1000"
         data-start="2400"
         data-easing="Power4.easeOut"
         data-endspeed="300"

@@ -1379,8 +1379,7 @@ border-top: dotted 1px rgba(160, 160, 160, 0.3);
     margin-top:2em;
     text-transform: uppercase;
 	}
-        
-        
+             
         
         
          .resp-text {
@@ -1394,17 +1393,17 @@ border-top: dotted 1px rgba(160, 160, 160, 0.3);
                 
             }
             .foo-text {
-                font-size: 0.55em;
+                font-size: 0.65em;
             }
         }
         
         @media screen and (max-width: 999px) and (min-width: 899px) {
             .resp-text {
-                font-size: 0.55em;
+                font-size: 0.71em;
             }
 
             .foo-text {
-                font-size: 0.55em;
+                font-size: 0.71em;
             }
         }
         
@@ -1497,11 +1496,16 @@ border-top: dotted 1px rgba(160, 160, 160, 0.3);
 #con{
     margin-top:5%;
 }
+#blog_text{
+    text-align: left;
+   
+     padding-left: 0;
+}
 .blog{
     width:auto;
     
               padding-right:2%;
-                padding-left:2%;
+              
               display: table;
                 text-align: justify;
 }
@@ -1583,8 +1587,7 @@ border-top: dotted 1px rgba(160, 160, 160, 0.3);
        width: 50px;
     border-radius: 50%;
     height:50px;
-   
-      
+    
   }
   #buttonsmobile{
       display:none;

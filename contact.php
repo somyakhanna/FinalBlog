@@ -31,7 +31,7 @@
             <div class="form-wrapper">
           <h2>leave a message</h2>
          <p> </p>
-          <form id='contact_form'>
+         <form id='contact_form' method="post" action = "contact_be.php" role="form">
               <div class="row">
                 <div class="col-xs-12 col-sm-12">
                   <input type="text" class="form-control" name="name" placeholder="name">
@@ -41,7 +41,7 @@
                     <input id="email" type="email" class="form-control" name="email" placeholder="e-mail" style="text-align: left;">
                 </div>
 				 <div class="col-xs-12 col-sm-12">
-                  <input id="phone" type="text" class="form-control" name="email" placeholder="phone">
+                  <input id="phone" type="text" class="form-control" name="phone" placeholder="phone">
                 </div>
                 <div class="col-xs-12 col-sm-12">
                   <input type="text" class="form-control" name="subject" placeholder="subject">

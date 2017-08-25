@@ -5,16 +5,15 @@ include("connections/connections.php");
 	
 ?>
 
-       <div id="right-wrapper"  class="col-xs-12 col-sm-4 col-lg-3 col-md-3">
+       <div id="right-wrapper"  class="col-xs-12 col-sm-3 col-sm-pull-1 col-lg-3 col-md-3">
 
                 <!-- Posts List -->
                 <section id="right" class="row">
                     <div>
                         
                         <ul class="posts col-xs-12 col-sm-12 col-lg-12 col-md-12">
-
-                            <div class="row"><h2 id="heading">Recommended Posts</h2></div>
-                            
+<div class="contact-wrapper">
+    <h2 id="heading">RECOMMENDED POSTS</h2>          </div>                  
                             <br>
            
                             <?php 

@@ -1,4 +1,4 @@
- <div class="mini-posts col-xs-12 col-lg-9 col-md-9 col-sm-8" >
+ <div class="mini-posts col-xs-12 col-lg-8 col-md-8 col-sm-8" >
                      
                     <h2 id="heading" >Other Genres</h2>
                         <br>
