@@ -69,7 +69,7 @@ If Plan Of Action reasonably believe that an account and Password is being used 
         </div>
   </section>
   <!--===| Contact Body End|===-->
-<?php include("footer.html");?>
+<?php include("footer.php");?>
 
   </body>
 

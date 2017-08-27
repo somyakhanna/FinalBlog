@@ -172,10 +172,8 @@ $result1=mysqli_query($connect,$query);
     </div>
 
 
-         <?php include("footer.html");?>
-    <?php mysqli_close($connect); ?>
-    <?php mysqli_close($connect); ?>
-    <?php mysqli_close($connect); ?>
+         <?php include("footer.php");?>
+    
                     </div>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

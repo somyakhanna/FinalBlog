@@ -113,7 +113,8 @@ $result=mysqli_query($connect,$query);
 
 </div>
 
- <?php include("footer.html");?>
+ <?php include("footer.php");?>
+  
     
 
     <script src="js/script.js"></script>

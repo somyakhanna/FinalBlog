@@ -284,9 +284,8 @@ $result=mysqli_query($connect,$query);
     <br>
          
    
-    <?php include("footer.html");?>
-    <?php mysqli_close($connect); ?>
-    <?php mysqli_close($connect); ?>
+    <?php include("footer.php");?>
+    
     
     <!-- Bootstrap core JavaScript -->
 

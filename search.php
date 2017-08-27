@@ -126,8 +126,8 @@
                 </section>
 
 
- <?php include("footer.html");?>
-    <?php mysqli_close($connect); ?>
+ <?php include("footer.php");?>
+
 
     <script src="js/script.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

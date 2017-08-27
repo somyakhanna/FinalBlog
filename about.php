@@ -70,5 +70,5 @@ entire experience, as we understand that your time is very valuable.
     </div>
   </section>
   
-  <?php  include("footer.html");?>
+  <?php  include("footer.php");?>
 </html>

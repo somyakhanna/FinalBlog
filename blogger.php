@@ -137,7 +137,8 @@ while($rows=mysqli_fetch_assoc($result1)){
            
          </div>
          
-  <?php include("footer.html"); ?>
+  <?php include("footer.php"); ?>
+        
  
  
  

@@ -76,7 +76,7 @@
         </div>
   </section>
   <!--===| Contact Body End|===-->
-<?php include("footer.html");?>
+<?php include("footer.php");?>
 
   </body>
 

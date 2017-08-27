@@ -113,7 +113,7 @@ However the internet is an ever evolving medium. We may change our privacy polic
         </div>
   </section>
   <!--===| Contact Body End|===-->
-<?php include("footer.html");?>
+<?php include("footer.php");?>
 
   </body>
 
