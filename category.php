@@ -50,17 +50,17 @@ $query="SELECT * FROM posts WHERE category='$s' LIMIT 3";
 
 <body>
          <?php include("menu.php");?>
-  <div id="category" id="content">
+  <div id="category" >
 
     <br>
     <br>
     <br>
     <!--Banner Ends-->
-    <div class="container" id="content">
+    <div class="container" id="content" >
         
          <br>
         
-         <h2><?php echo $s;?></h2>
+         <h2 id="cathead"><?php echo $s;?></h2>
          
       <h1>Featured Posts</h1>
       
@@ -173,6 +173,9 @@ $result1=mysqli_query($connect,$query);
 
 
          <?php include("footer.html");?>
+    <?php mysqli_close($connect); ?>
+    <?php mysqli_close($connect); ?>
+    <?php mysqli_close($connect); ?>
                     </div>
     
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

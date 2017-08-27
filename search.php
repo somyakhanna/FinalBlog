@@ -108,7 +108,8 @@
 
 
 
-       
+      
+</div> 
                              
      
    <section id="con">
@@ -116,68 +117,7 @@
                 <div class="row" >
                     
                     
-                        <div class="mini-posts col-xs-12 col-lg-9 col-md-9 col-sm-9" >
-                     
-                        <h2 id="heading" >Other Genres</h2>
-                        <br>
-                        <br>
-                        <!-- Mini Post -->
-
-                        <article class="mini-post col-xs-12 col-sm-6 col-lg-6 col-md-6">
-
-                            <header>
-                                <h3><a href="category.php?cat=LIFESTYLE" id="genre">Lifestyle</a></h3>
-                            </header>
-                            <a href="category.php?cat=LIFESTYLE" class="image"><img src="img/lifestyle.png" alt="" /></a>
-                        </article>
-
-
-
-                        <article class="mini-post col-xs-12 col-sm-6 col-lg-6 col-md-6">
-
-                            <header>
-                                <h3><a href="category.php?cat=Entertainment" id="genre">Entertainment</a></h3>
-                            </header>
-                            <a href="category.php?cat=Entertainment" class="image"><img src="img/enter.jpg" alt="" /></a>
-                        </article>
-
-
-
-                        <article class="mini-post col-xs-12 col-sm-6 col-lg-6 col-md-6">
-
-                            <header>
-                                <h3><a href="category.php?cat=Art,Culture_and_Heritage" id="genre">Art,Culture &amp; Heritage</a></h3>
-                            </header>
-                            <a href="category.php?cat=Art,Culture_and_Heritage" class="image"><img src="img/art.jpg" alt="" /></a>
-                        </article>
-
-                        <article class="mini-post col-xs-12 col-sm-6 col-lg-6 col-md-6">
-
-                            <header>
-                                <h3><a href="category.php?cat=Health_and_Wellness" id="genre">Health &amp; Wellness</a></h3>
-                            </header>
-                            <a href="category.php?cat=Health_and_Wellness" class="image"><img src="img/health.jpg" alt="" /></a>
-                        </article>
-
-
-
-                        <article class="mini-post col-xs-12 col-sm-6 col-lg-6 col-md-6">
-
-                            <header>
-                                <h3><a href="category.php?cat=Food_and_Beverages" id="genre">Food &amp; Beverages</a></h3>
-                            </header>
-                            <a href="category.php?cat=Food_and_Beverages" class="image"><img src="img/food.jpg" alt="" /></a>
-                        </article>
-
-                        <article class="mini-post col-xs-12 col-sm-6 col-lg-6 col-md-6">
-
-                            <header>
-                                <h3><a href="category.php?cat=Travel_and_Adventure" id="genre">Travel &amp; Adventure</a></h3>
-                            </header>
-                            <a href="category.php?cat=Travel_and_Adventure" class="image"><img src="img/travel2.jpg" alt="" /></a>
-                        </article>
-
-                    </div>
+                        <?php include("genre.php");?> 
                         <?php include("sidebar.php");?>  
                 </div>
                 
@@ -185,10 +125,9 @@
             </div>
                 </section>
 
-</div>
 
  <?php include("footer.html");?>
-    
+    <?php mysqli_close($connect); ?>
 
     <script src="js/script.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>

@@ -9,7 +9,7 @@ jQuery('.tp-banner').show().revolution(
     dottedOverlay:"none",
     delay:6000,
     startwidth:1170,
-       
+       startheight:500,
     
 
     thumbWidth:100,

@@ -80,12 +80,12 @@
                     </div>
                 
                 <div class="feature-image" >
-                    <a href="#">  <img src="img/Tanishq.jpg" alt="" id="circle"></a>
+                    <a href="blogger.php?blogger=Tanishq%20Agarwal">  <img src="img/Tanishq.jpg" alt="" id="circle"></a>
                           <h2>Tanishq Agarwal</h2>
                
                     </div>
                 <div class="feature-image" >
-                      <a href="#">  <img src="img/naina.jpg" alt="" id="circle">
+                      <a href="blogger.php?blogger=Naina%20Ruhail">  <img src="img/naina.jpg" alt="" id="circle">
                           <h2>Naina Ruhail</h2></a>
                 
                     </div>
